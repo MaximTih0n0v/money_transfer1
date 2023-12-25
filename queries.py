@@ -18,7 +18,7 @@ class Queries:
             new_user = User(**user_data)
             session.add(new_user)
             session.commit()
-            print("Пользователь успешно создан!")
+            print("Пользователь Успешно создан!")
             return new_user.user_id  # Возвращаем user_id только что созданного пользователя
         except Exception as e:
             session.rollback()
@@ -30,7 +30,7 @@ class Queries:
             new_bank_account = BankAccount(**bank_data)
             session.add(new_bank_account)
             session.commit()
-            print("Банковская информация успешно записана!")
+            print("Банковская Информация успешно записана!")
         except Exception as e:
             session.rollback()
             print(f"Ошибка при записи банковской информации: {e}")
